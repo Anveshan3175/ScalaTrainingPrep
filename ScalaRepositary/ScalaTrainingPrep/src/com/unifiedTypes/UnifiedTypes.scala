@@ -18,7 +18,7 @@ object UnifiedTypes extends App {
   
     while (iter.hasNext) {
       //println(iter.next.toString())
-      println(iter.next)
+      println(iter.next)   //string representations of all elements are printed out.
     }
 
 }
