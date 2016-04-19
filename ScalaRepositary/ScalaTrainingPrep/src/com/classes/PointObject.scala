@@ -13,6 +13,12 @@ object PointObject {
    // println(pt)
     
     
+    var linePt1 = new Point(3,4)
+    var linePt2 = new Point(8,9)
+    
+    val line = new Line(linePt1,linePt2);
+    
+    println("The line "+line +" is of length "+line.length());
         
   }
   
