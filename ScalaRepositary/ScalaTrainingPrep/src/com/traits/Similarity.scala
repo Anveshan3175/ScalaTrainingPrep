@@ -6,7 +6,7 @@ trait Similarity {
 }
 
 trait Equality {
-  def arePointsEqual(obj:Point);
+  def arePointsEqual(obj:Point):Boolean;
 }
 
 class Point(xc:Int,yc:Int) extends Similarity with Equality{
@@ -16,8 +16,20 @@ class Point(xc:Int,yc:Int) extends Similarity with Equality{
     obj.isInstanceOf[Point]
   }
   
-  def arePointsEqual(pt:Point) = {
-    pt.isInstanceOf[Point] && pt.x == x && pt.y == this.y
+  def arePointsEqual(pt:Point):Boolean = {
+    return pt.isInstanceOf[Point] && pt.x == x && pt.y == this.y
   }
   
+}
+
+
+object testPoint {
+  
+  def main(args:Array[String]) {
+    val p1 = new Point(5,6);
+    val p2 = new Point(5,6);
+    
+    println("p1 == p2 : " +p1.arePointsEqual(p2))
+    
+  }
 }
