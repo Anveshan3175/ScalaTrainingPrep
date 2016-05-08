@@ -19,8 +19,8 @@ object TestAnonyFunctions {
     println("Calling addition of numbers "+add(3,4))
     
     // Defining and using a function - 2
-    val incr = (x:Int) => x + 1
-    println("Calling incr for 3 :"+incr(3))
+    val increment = (x:Int) => x + 1
+    println("Calling incr for 3 :"+increment(3))
     
     //val addFunction = (a:Int,b:Int) =>  a + b  will compile
     //val sum = (x:Int,y:Int):Int => x + y  will not compile  ?
@@ -32,6 +32,18 @@ object TestAnonyFunctions {
     def diff(a:Int,b:Int):Int = {a - b}
     val diffFun = manipulate(3,4,diff)
     println(diffFun)
+    
+    // define a function in scala
+   (x:Int) => x + 1
+
+   // function definition
+   def fOne(x:Int) = x + 1
+   
+   // assign an object representing the function to a variable
+   val fTwo = (x:Int) => x + 1
+   println("Hello")
+   println("plain fTwo"+fTwo)
+   println("Plain toString"+fTwo.toString())
     
   }
   
