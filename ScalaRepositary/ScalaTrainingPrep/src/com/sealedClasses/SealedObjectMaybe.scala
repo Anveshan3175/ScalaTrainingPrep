@@ -3,6 +3,7 @@ package com.sealedClasses
 
 sealed trait Maybe[+T]
 case class Value[T](Value: T) extends Maybe[T]
+// when your class has no argument you use a case object instead of a case class with an empty parameter list
 case object NoValue extends Maybe[Nothing]
 
 object SealedObjectMaybe {
