@@ -13,11 +13,9 @@ object CurryTest extends App{
   println(sum(4,add(6)))
   
   def strConcat(s1:String) = (s2:String) => s2+s1
-  
   println(strConcat("Hello ")("World"))
   
   def saluteName(f:String => String):String = f("Honorable ")
-  
   println(saluteName(strConcat("Chief Justice")))
   
 }
