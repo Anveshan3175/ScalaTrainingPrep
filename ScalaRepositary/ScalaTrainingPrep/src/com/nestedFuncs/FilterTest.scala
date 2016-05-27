@@ -19,5 +19,6 @@ object FilterTest extends App{
     process(xs  )
   }
   
+  //Testting the filter
   println(filter(List(1,2,3,4,5,6,7),3))
 }
