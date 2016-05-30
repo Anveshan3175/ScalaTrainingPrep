@@ -29,6 +29,7 @@ package com.anonymousFuncs
  *   // in other languages with OO notation - needless clutter
  *   List.instanceOf(1,2,3) 
  *   So apply method is just a handy way of closing the gap between functions and objects in Scala
+ *   http://stackoverflow.com/questions/9737352/what-is-the-apply-function-in-scala
  */
 object ApplyFun {
   
