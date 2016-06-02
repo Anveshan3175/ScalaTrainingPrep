@@ -3,7 +3,7 @@ package com.anonymousFuncs
 
 // Class name should have been DiffMethodDefs
 // In java there cannot be any method which doesn't accept any params
-// http://joelabrahamsson.com/learning-scala-part-five-methods/
+// http://joelabrahamsson.com/learning-scala-part-five-methods/ 
 object DiffFunctionDefs extends App {
   
   
