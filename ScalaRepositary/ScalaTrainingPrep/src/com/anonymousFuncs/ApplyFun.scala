@@ -34,6 +34,7 @@ package com.anonymousFuncs
 object ApplyFun {
   
   
+  
   def main(args:Array[String]) {
     
     def sum(x:Int,y:Int) = x+ y
@@ -46,6 +47,18 @@ object ApplyFun {
     
     // toString is method from Any.In scala every function is object of type Function[ , ]
     println("Calling toString method on function :"+add.toString())   // override def toString() = "<function1>"
+    
+    // Define a Phythagoreous function
+    
+      val isPythTripple2 : (Int,Int,Int) => Boolean = new Function3[Int,Int,Int,Boolean]{
+        def apply( a :Int, b :Int, c :Int ) : Boolean = {
+            val aSquare = a * a
+            val bSquare = b * b
+            val cSquare = c * c
+     
+            aSquare + bSquare == cSquare
+        }
+    }
   
   }
   
