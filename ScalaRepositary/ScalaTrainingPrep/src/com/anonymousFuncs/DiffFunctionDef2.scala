@@ -27,14 +27,23 @@ object DiffFunctionDef2 extends App{
   }
 
   val even2: (Int => Boolean) = {
-     println("IN the definition of val"); // This is not printed in below invocation. 
+     println("In the definition of val"); // This is not printed in below invocation. 
     (x => x % 2 == 0)
   }
   
-  println("---------------------Difference between Val ad Def----------------------")
+  println("---------------------Difference between Val and Def---Start-------------------")
   println("Testing even1 :"+even1(3))
   println("Testing even1 :"+even1(4))
   println("Testing even2 :"+even2(5))
   println("Testing even2 :"+even2(6))
+  println("---------------------Difference between Val and Def---End-------------------")
+  
+  def product : (Int,Int) => Int = _ * _
+  def multiply : (Int,Int) => Int = (x,y) => x * y
+  val into : (Int,Int) => Int = ((x,y) => x * y)
+  
+  println("Testing product "+product(34,12))
+  println("Testing multiply "+multiply(34,12))
+  println("Testing into "+into(34,12))
   
 }
