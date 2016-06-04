@@ -1,0 +1,14 @@
+scala inheritance is implemented in two ways 
+-> subclassing : keyword extends
+-> mixin-based composition : keyword with
+
+mutliple ineritance can be done via mixin-based composition
+
+
+Scala is functional :
+1) Every function is a value (And every value is an object)
+2) Scala supports higher-order functions.(functions that can take another function as parameter or return function as parameter).
+3) Scala allows nested functions.(A function can be defined in another function)
+4) Scala allows anonymous function and it has light-weight syntax for it
+5) scala supports currying
+6) To group functions which are not related to any other class, use singleton objects.
