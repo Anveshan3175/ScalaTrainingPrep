@@ -46,4 +46,11 @@ object DiffFunctionDef2 extends App{
   println("Testing multiply "+multiply(34,12))
   println("Testing into "+into(34,12))
   
+  
+  println()
+  println("Another way of definig function")
+  def difference = (a:Int,b:Int) => (a - b)
+  def subtract : (Int,Int) => Int = (x,y) => x - y
+  val minus = (x:Int,y:Int) => x - y
+  
 }
